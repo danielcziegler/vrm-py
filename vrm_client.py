@@ -133,5 +133,6 @@ class VrmClient():
                 "latitude": lat, 
                 "longitude": long, 
             }
-            return json.dumps(temp, indent=4)
+            output.append(temp)
+        return json.dumps(output, indent=4)
         
